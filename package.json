@@ -1,4 +1,7 @@
 {
+  "name": "kblsn",
+  "license": "ISC",
+  "author": "Nick Askam",
   "dependencies": {
     "@types/jest": "^26.0.7",
     "@types/node": "^14.0.27",

@@ -148,7 +148,6 @@ chrome-user-data
 *.swo
 /.pnp
 .pnp.js
-.env
 
 .env.local
 .env.development.local

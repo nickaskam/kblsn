@@ -1,5 +1,3 @@
-import * as constants from "../constants";
-import axios from "axios";
 import { ActionCreator, Action, Dispatch } from "redux";
 import { Blog } from "../types/Blog";
 import { ThunkAction } from "redux-thunk";

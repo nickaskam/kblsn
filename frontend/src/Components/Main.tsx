@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+import { Header } from "./Layout/Header";
 
 export class Main extends Component<{}> {
   render() {
     return (
       <div>
-        <h1>KBLSN</h1>
-        <p>Welcome to KBLSN Sports Network!</p>
+        <Header title="KBLSN" />
+        <div>
+          <p>Welcome to KBLSN Sports Network!</p>
+        </div>
       </div>
     );
   }

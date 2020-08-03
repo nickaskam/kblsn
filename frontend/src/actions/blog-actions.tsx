@@ -1,6 +1,8 @@
 import { ActionCreator, Action, Dispatch } from "redux";
 import { Blog } from "../types/Blog";
 import { ThunkAction } from "redux-thunk";
+import axios from "axios";
+import { blogsReducer } from "../reducer/blog";
 
 export interface LoadingBlogAction extends Action<"LoadingBlog"> {}
 
@@ -29,6 +31,7 @@ export const getBlogActionCreator: ActionCreator<ThunkAction<
         created_at: "2020-07-29T19:39:05.631926Z",
       },
     ];
+    // getBlogsFromApi();
     const loadedBlogAction: LoadedBlogAction = {
       blogs,
       type: "LoadedBlog",
@@ -37,9 +40,11 @@ export const getBlogActionCreator: ActionCreator<ThunkAction<
   };
 };
 
-// export const getBlogsFromApi = async () => {
-//   let res = await axios.get("http://localhost:8000/api/blog/");
-
-//   let blogs = res.data;
-//   console.log(blogs);
+// const getBlogsFromApi = () => {
+//   axios({
+//     method: "GET",
+//     url: `http://localhost:8000/api/blog`,
+//   }).then((response) => {
+//     const blogs = response.data;
+//   });
 // };

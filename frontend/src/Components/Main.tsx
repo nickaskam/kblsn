@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Header } from "./Layout/Header";
+import { Footer } from "./Layout/Footer";
 
 export class Main extends Component<{}> {
   render() {
@@ -9,6 +10,7 @@ export class Main extends Component<{}> {
         <div>
           <p>Welcome to KBLSN Sports Network!</p>
         </div>
+        <Footer author="Nick Askam" />
       </div>
     );
   }
